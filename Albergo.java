@@ -25,7 +25,6 @@ public class Albergo {
         Random random = new Random();
         Stanza[] tutteStanze = getAllRooms();
 
-        // Filtra stanze disponibili del tipo specificato
         java.util.ArrayList<Stanza> stanzeDisponibili = new java.util.ArrayList<>();
         for (Stanza stanza : tutteStanze) {
             if (!stanza.isOccupata() && 
@@ -36,10 +35,9 @@ public class Albergo {
         }
 
         if (stanzeDisponibili.isEmpty()) {
-            return -1; // Nessuna stanza disponibile
+            return -1;
         }
 
-        // Seleziona una stanza casuale
         int index = random.nextInt(stanzeDisponibili.size());
         Stanza stanzaScelta = stanzeDisponibili.get(index);
         stanzaScelta.setOccupata(true);

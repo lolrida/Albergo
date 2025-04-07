@@ -1,13 +1,13 @@
 public class Piano {
     private int numeroPiano;
     Stanza[] stanze;
-    private static final int LAST_LUXURY_FLOORS = 1;
+    private static final int last_lux_floor = 1;
 
     public Piano(int numeroPiano, int numeroStanze, int totalePiani) {
         this.numeroPiano = numeroPiano;
         this.stanze = new Stanza[numeroStanze];
 
-        boolean isLuxuryFloor = (numeroPiano > (totalePiani - LAST_LUXURY_FLOORS));
+        boolean isLuxuryFloor = (numeroPiano > (totalePiani - last_lux_floor));
 
         for (int i = 0; i < numeroStanze; i++) {
             int numeroStanza = numeroPiano * 100 + i + 1;

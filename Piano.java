@@ -1,7 +1,7 @@
 public class Piano {
     private int numeroPiano;
     Stanza[] stanze;
-    private static final int LAST_LUXURY_FLOORS = 2;
+    private static final int LAST_LUXURY_FLOORS = 1;
 
     public Piano(int numeroPiano, int numeroStanze, int totalePiani) {
         this.numeroPiano = numeroPiano;

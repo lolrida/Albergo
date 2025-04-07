@@ -23,5 +23,9 @@ abstract class Stanza {
         occupata = false;
     }
 
+    public void setOccupata(boolean occupata) {
+        this.occupata = occupata;
+    }
+
     public abstract String getDescrizione();
 }
